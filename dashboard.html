@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playtopia- Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url('file:///F:/Coding/Web%20Development/Playtopia%20_Project/images/playtopia_background.jpg'); /* Replace 'background.jpg' with your image URL */
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background: #ffffff;
+            width: 600px; /* Adjust as needed */
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .grid-item a {
+            text-decoration: none;
+            color: #333;
+        }
+        .grid-item h2 {
+            margin-top: 0;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .back-button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor:pointer;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="flappy_bird.html">
+                    <h2>FlappyBird</h2>
+                    <img src="file:///F:/Coding/Web%20Development/Playtopia%20_Project/images/Bird.png" alt="Website 1 Image">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="tic_tac_toe.html">
+                    <h2>Tic Tac Toe</h2>
+                    <img src="file:///F:/Coding/Web%20Development/Playtopia%20_Project/images/tic_tac_toe_logo.png" alt="Website 2 Image">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="snake.html">
+                    <h2>Snake</h2>
+                    <img src="file:///F:/Coding/Web%20Development/Playtopia%20_Project/images/snake_logo.png" alt="Website 3 Image">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="pass_on.html">
+                    <h2>PassOn</h2>
+                    <img src="file:///F:/Coding/Web%20Development/Playtopia%20_Project/images/pass_on_logo.png" alt="Website 4 Image">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="memory_match.html">
+                    <h2>MemoryMatch</h2>
+                    <img src="file:///F:/Coding/Web%20Development/Playtopia%20_Project/images/memory_logo.png" alt="Website 5 Image">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="stick_man.html">
+                    <h2>StickMan</h2>
+                    <img src="file:///F:/Coding/Web%20Development/Playtopia%20_Project/images/stick_man_logo.png" alt="Website 6 Image">
+                </a>
+            </div>
+        </div>
+    </div>
+    <button class="back-button" onclick="goBack()">Back</button>
+
+    <script>
+       function goBack() {
+            window.location.href = "index.html"; 
+        }
+    </script>
+</body>
+</html>

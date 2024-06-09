@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass On</title>
+    <script src="file:///F:/Coding/Web%20Development/Playtopia%20_Project/scripts/pass_on_scripts.js" defer></script>
+</head>
+<style>
+body{
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1100px;
+}
+canvas{
+    border: 1px solid white;
+    width: 100%;
+}
+*{
+    user-select: none;
+}
+.back-button{
+    position: absolute; /* Add absolute positioning */
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+</style>
+<body>
+    <h1>Pass On</h1>
+    <p>Left click on canvas to move your player. Try to reach the goal without being caught by the enemies.</p>
+    <canvas id="mycanvas" width="640" height="320"></canvas>
+    <button class="back-button" onclick="goBack()">Back</button>
+
+    <script>
+       function goBack() {
+            window.location.href = "dashboard.html"; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Man</title>
+    <link rel="stylesheet" href="file:///F:/Coding/Web%20Development/Playtopia%20_Project/styles/stick_man_styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="score"></div>
+        <canvas id="game" width="375" height="375"></canvas>
+        <div id="introduction">Hold down the mouse to stretch out a stick</div>
+        <div id="perfect">DOUBLE SCORE</div>
+        <button id="restart">RESTART</button>
+    </div>
+
+</body>
+<button class="back-button" onclick="goBack()">Back</button>
+
+    <script>
+       function goBack() {
+            window.location.href = "dashboard.html"; 
+        }
+    </script>
+<script src="file:///F:/Coding/Web%20Development/Playtopia%20_Project/scripts/stick_man_scripts.js"></script>
+</html>
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome- Playtopia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('file:///F:/Coding/Web%20Development/Playtopia%20_Project/images/playtopia_background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100vh;
+        }
+        .button {
+            background-color: #89c26a;
+            color: #000000;
+            border: none;
+            margin-bottom:200px;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #8df86c;
+        }
+    </style>
+</head>
+<body>
+    <button class="button" onclick="redirectToDashboard()">Let's Go !</button>
+
+    <script>
+        function redirectToDashboard() {
+            window.location.href = "dashboard.html"; // Change to the actual dashboard page URL
+        }
+    </script>
+</body>
+</html>
